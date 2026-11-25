@@ -101,11 +101,19 @@ Estrutura declarada no próprio PDF: **Primitivas → Cores semânticas → Elem
 ### Home (`Desktop-1`)
 
 1. Header: "Voltar para página anterior" (15), logo (20), nav `Projetos / Sobre / Contato ↗` (17).
-2. Hero (94): "Olá, sou Matheus Almeida — Product Designer para pessoas, produtos e novas possibilidades." → **corrigir para Matheus Oliveira**.
+2. Hero (94): "Olá, sou Matheus Almeida — Product Designer para pessoas, produtos e novas possibilidades." → **corrigir para Matheus Oliveira**. Tratamento visual confirmado pelo titular em 25/11/2026: três linhas; linhas 1 e 3 em `text/muted` (`neutral/500`), linha 2 com "Product Designer" em `text/primary` (`neutral/950`) e o restante em `text/muted`.
 3. Introdução (21): "+7 anos construindo soluções simples..." e "Esse sou eu ↓".
 4. `01 / SOBRE` (13): manchete "Ideias em movimento." (68), texto (30), link "Mais sobre mim ↗" (16).
 5. `02 / PORTFÓLIO` (13): "Cases de trabalho" (88) e 5 cards (título 56, categoria 14/17, descrição 21, "Ver projeto ↗" 16).
 6. Rodapé escuro com CTA (78/72), "Fale comigo pelo LinkedIn" (32), localização/disponibilidade (18), copyright (14), "Voltar ao topo ↑".
+
+Linhas do hero aplicadas em `index.html`:
+
+| Linha | Texto | Cor |
+|---|---|---|
+| 1 | `Olá, sou Matheus Oliveira —` | `text/muted` (`neutral/500`) |
+| 2 | `Product Designer` + ` para pessoas,` | `text/primary` (`neutral/950`) + `text/muted` |
+| 3 | `produtos e novas possibilidades.` | `text/muted` (`neutral/500`) |
 
 ### Cards da home
 

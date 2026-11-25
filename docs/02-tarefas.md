@@ -42,7 +42,7 @@ Status: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído · `[-]` bloquea
 
 ## Fase 2 — Home
 
-- [x] **T12** `index.html`: header, hero, intro e bloco `01 / SOBRE` com "Mais sobre mim". Nome corrigido e typos revisados.
+- [x] **T12** `index.html`: header, hero, intro e bloco `01 / SOBRE` com "Mais sobre mim". Nome corrigido, typos revisados e título do hero com as três linhas e o destaque "Product Designer" conforme referência visual confirmada.
 - [x] **T13** `index.html`: `02 / PORTFÓLIO` com os 3 cards com fonte aprovada (01, 02 e 04). Cards 03 e 05 fora até B2.
 - [x] **T14** `index.html`: faixa laranja com CTA interno e rodapé escuro com contato/copyright. LinkedIn publicado; demais CTAs externos pendentes exibidos como texto com aviso.
 - [x] **T15** Verificar home em 375/768/1280 px: console sem erro, sem rolagem horizontal, teclado e foco visíveis. Ver detalhes em "Verificação executada".
@@ -86,10 +86,11 @@ Método: servidor local `python3 -m http.server 8000 --bind 127.0.0.1`, Chrome h
 - [x] Sem JavaScript em 375 px: conteúdo e links continuam visíveis e a navegação aparece sem o botão.
 - [x] Tab/Shift+Tab percorrem skip link, logo, botão de menu e links, com `:focus-visible` em todos; skip link recebe foco.
 - [x] Texto publicado revisado: nome Matheus Oliveira, "Conecte-se pelo LinkedIn", "Decisões-chave e outcomes" e "follow-ups"/"follow-up" no lugar das abreviações do PDF.
+- [x] Hero da home aplicado em três linhas: "Product Designer" em `text/primary` e o restante em `text/muted`, conforme imagem de referência enviada pelo titular; nome permanece Matheus Oliveira.
 - [x] Favicon próprio servido como `image/svg+xml` nas 5 páginas; 4 metadados Open Graph presentes sem `og:url`/`og:image` inventados.
 - [x] CTAs ainda pendentes não simulam link: `.cta-band__title` e "Meu currículo" sem `href` e fora da ordem de foco; "Meu LinkedIn" é link real com `rel` seguro.
 - [x] Menu aberto em 375 px fecha ao cruzar 768 px e continua fechado ao voltar para 375 px.
 - [x] Nenhum hex fora de `css/tokens.css`; `node --check` nos dois módulos JS passou; `git diff --check` limpo.
-- [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, preto sobre laranja, branco sobre preto, branco sobre laranja apenas em texto grande).
+- [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, preto sobre laranja, branco sobre preto, branco sobre laranja apenas em texto grande). O `#767676` do hero sobre `#FCFCFC` resulta em 4,43:1, acima do mínimo de 3:1 para texto grande.
 
 > O navegador do OpenCode estava desconectado; a verificação visual foi feita com Chrome headless na própria máquina. Não foi possível fazer inspeção visual por imagem neste modelo.

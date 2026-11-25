@@ -1,6 +1,6 @@
 # AGENTS.md — Matheus Oliveira
 
-**Versão:** 1.4
+**Versão:** 1.5
 **Atualizado em:** 25/11/2026
 **Stack:** HTML5 + CSS + JavaScript vanilla (ES modules), sem framework
 **Aplica-se a:** todo o repositório
@@ -270,6 +270,7 @@ Uma entrega só termina quando:
 |---|---|
 | Nome de exibição | **Definido:** Matheus Oliveira em todo o site |
 | Mapa de páginas | **Definido:** `Desktop-1` = home; `Desktop` = Sobre |
+| Tratamento visual do hero | **Definido:** três linhas; "Product Designer" em `text/primary` e os demais trechos em `text/muted`, conforme referência enviada pelo titular em 25/11/2026 |
 | Texto dos cases "Unificando produtos" e "Seguro veicular" | Pendente — fornecer pelo titular ou retirar os cards da home |
 | Case de onboarding (`Shopbot.pdf`) | A decidir — incluir como página própria ou manter fora |
 | URLs de CTAs e links | Links internos, "Ver projeto" e LinkedIn resolvidos (`https://www.linkedin.com/in/matheus-oliveira-b61917142/`); pendentes currículo, demo do ShopBot e link externo do WhatsApp Suite (B3) |

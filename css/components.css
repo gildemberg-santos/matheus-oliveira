@@ -17,6 +17,15 @@
   max-width: 26ch;
 }
 
+.hero__title-line {
+  display: block;
+  color: var(--color-text-muted);
+}
+
+.hero__title-highlight {
+  color: var(--color-text-primary);
+}
+
 .hero__intro,
 .case-hero__subtitle {
   max-width: 56ch;
