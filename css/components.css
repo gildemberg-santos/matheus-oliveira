@@ -184,6 +184,17 @@
   margin-top: var(--space-7);
 }
 
+.external-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target-min);
+  text-decoration: none;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
 .pending-links {
   display: flex;
   flex-wrap: wrap;

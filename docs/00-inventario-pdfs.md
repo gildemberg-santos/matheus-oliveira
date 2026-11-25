@@ -172,10 +172,16 @@ Resumo dos números publicados nos cases:
 | Mapa de páginas | **Definido:** `Desktop-1` = home; `Desktop` = Sobre |
 | Cases sem PDF | **Pendente:** fornecer texto aprovado; cards 03 e 05 ficaram fora da home |
 | Case de onboarding | **Pendente:** incluir como página própria ou manter fora |
-| URLs de CTAs e links | Links internos e "Ver projeto" resolvidos; pendentes LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite |
+| URLs de CTAs e links | Links internos, "Ver projeto" e LinkedIn resolvidos; pendentes currículo, demo do ShopBot e link externo do WhatsApp Suite |
 | Fonte tipográfica | **Pendente:** pilha do sistema como provisória; sugestão Inter self-hosted |
 | Domínio, `canonical`, `og:image`, `sitemap.xml` | **Pendente:** necessário para URL absoluta; favicon e `og:title`/`og:description`/`og:type`/`og:locale` já presentes |
 | Uso das imagens dos PDFs | Extraídas e convertidas para WebP em `assets/images/`; descrições de `alt` aguardam revisão do titular |
+
+### URLs confirmadas pelo titular
+
+| Destino | URL | Registro |
+|---|---|---|
+| LinkedIn | `https://www.linkedin.com/in/matheus-oliveira-b61917142/` | Informada pelo titular em 25/11/2026; usada no rodapé das 5 páginas e em "Meu LinkedIn" na página Sobre |
 
 ---
 

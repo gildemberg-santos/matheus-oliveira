@@ -49,7 +49,7 @@ system deginer/            PDFs de origem, somente leitura
 ## Pendências
 
 - **B2:** texto aprovado dos cases "Unificando produtos" e "Seguro veicular" — por isso não há cards/páginas para eles.
-- **B3:** URLs reais de LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite. Os trechos correspondentes aparecem como texto com aviso visível, nunca como link falso.
+- **B3:** LinkedIn resolvido (`https://www.linkedin.com/in/matheus-oliveira-b61917142/`). Faltam currículo, demo do ShopBot e link externo do WhatsApp Suite; esses trechos aparecem como texto com aviso visível, nunca como link falso.
 - **B4:** fonte tipográfica definitiva. Hoje a pilha do sistema é usada como provisória.
 - **B5:** domínio para `canonical`, `og:image`, `sitemap.xml` e `robots.txt`. `og:title`, `og:description`, `og:type` e `og:locale` já estão presentes sem URL inventada.
 - **B6:** decidir se o case extra de onboarding (`Shopbot.pdf`) entra no site.

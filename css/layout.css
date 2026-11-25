@@ -175,8 +175,16 @@
 }
 
 .site-footer__contact {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--target-min);
   font-size: var(--font-size-lead);
   line-height: var(--line-height-heading);
+  text-decoration: none;
+}
+
+.site-footer__contact:hover {
+  text-decoration: underline;
 }
 
 .site-footer__pending {
