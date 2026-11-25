@@ -1,7 +1,7 @@
 # 01 — Plano de implementação
 
 **Versão:** 1.0 · **Atualizado em:** 25/11/2026
-**Status:** fases 1–4 executadas para as páginas com fonte disponível; home, Sobre e 3 cases implementados e verificados em 375/768/1280 px. Fase 5 parcial (metadados básicos prontos; Open Graph, favicon e sitemap dependem de domínio).
+**Status:** fases 1–4 executadas para as páginas com fonte disponível; home, Sobre e 3 cases implementados e verificados em 375/768/1280 px. Fase 5 parcial (title/description, Open Graph básico e favicon prontos; canonical, og:image e sitemap dependem de domínio).
 
 > este documento responde "como montar". O inventário das referências está em `00-inventario-pdfs.md`; as unidades de trabalho em `02-tarefas.md`. Em caso de conflito, prevalece `AGENTS.md`.
 

@@ -65,10 +65,10 @@ Status: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído · `[-]` bloquea
 
 ## Fase 5 — Acabamento
 
-- [~] **T26** `title` e descrição em todas as páginas prontos; `og:*` e favicon pendentes. **Depende:** B5 para valores definitivos.
+- [~] **T26** `title`, descrição, `og:type`/`og:title`/`og:description`/`og:locale` e favicon próprio prontos em todas as páginas; `canonical` e `og:image` pendentes. **Depende:** B5 para valores com URL absoluta.
 - [-] **T27** `sitemap.xml` e `robots.txt` com o domínio definitivo. **Depende:** B5.
-- [~] **T28** Auditoria de acessibilidade, performance e links: checklists estruturais, visuais e de teclado executados; links externos dependem de B3.
-- [~] **T29** Revisão final: `git diff --check` limpo, diff revisado e documentação atualizada. Checklist de `AGENTS.md` §11 registrado abaixo.
+- [~] **T28** Auditoria de acessibilidade, performance e links: checklists estruturais, visuais e de teclado executados; contraste por ferramenta, validação visual com o titular e links externos dependem de B3/B8.
+- [x] **T29** Revisão final: `git diff --check` limpo, diff revisado e documentação atualizada. Checklist de `AGENTS.md` §11 registrado abaixo.
 
 ---
 
@@ -84,7 +84,11 @@ Método: servidor local `python3 -m http.server 8000 --bind 127.0.0.1`, Chrome h
 - [x] Menu mobile: oculto em 375 px com JS, botão visível, abre com clique, fecha com Escape; em 768/1280 px a navegação fica sempre visível e o botão some.
 - [x] Sem JavaScript em 375 px: conteúdo e links continuam visíveis e a navegação aparece sem o botão.
 - [x] Tab/Shift+Tab percorrem skip link, logo, botão de menu e links, com `:focus-visible` em todos; skip link recebe foco.
+- [x] Texto publicado revisado: nome Matheus Oliveira, "Conecte-se pelo LinkedIn", "Decisões-chave e outcomes" e "follow-ups"/"follow-up" no lugar das abreviações do PDF.
+- [x] Favicon próprio servido como `image/svg+xml` nas 5 páginas; 4 metadados Open Graph presentes sem `og:url`/`og:image` inventados.
+- [x] CTAs pendentes não simulam link: `.cta-band__title` e `.pending-links` sem sublinhado, sem `href` e fora da ordem de foco.
+- [x] Menu aberto em 375 px fecha ao cruzar 768 px e continua fechado ao voltar para 375 px.
 - [x] Nenhum hex fora de `css/tokens.css`; `node --check` nos dois módulos JS passou; `git diff --check` limpo.
-- [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, branco sobre preto, branco sobre laranja apenas em texto grande).
+- [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, preto sobre laranja, branco sobre preto, branco sobre laranja apenas em texto grande).
 
 > O navegador do OpenCode estava desconectado; a verificação visual foi feita com Chrome headless na própria máquina. Não foi possível fazer inspeção visual por imagem neste modelo.

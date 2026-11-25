@@ -1,13 +1,13 @@
 # AGENTS.md — Matheus Oliveira
 
-**Versão:** 1.2
+**Versão:** 1.3
 **Atualizado em:** 25/11/2026
 **Stack:** HTML5 + CSS + JavaScript vanilla (ES modules), sem framework
 **Aplica-se a:** todo o repositório
 
 > Este arquivo é a fonte de verdade para agentes de código e para quem trabalhar no projeto. Leia inteiro antes de editar. Em caso de conflito, prevalece nesta ordem: **1)** este arquivo; **2)** `README.md`; **3)** decisões registradas em `docs/`.
 >
-> **Estado atual:** fundação, home, página Sobre e 3 cases implementados em HTML/CSS/JS puro e verificados em 375/768/1280 px. Ainda faltam URLs externas, fonte definitiva, domínio e texto de 2 cases. Seções marcadas como planejadas neste arquivo continuam como contrato, não como código existente.
+> **Estado atual:** fundação, home, página Sobre e 3 cases implementados em HTML/CSS/JS puro e verificados em 375/768/1280 px, com favicon e Open Graph básico. Ainda faltam URLs externas, fonte definitiva, domínio e texto de 2 cases. Seções marcadas como planejadas neste arquivo continuam como contrato, não como código existente.
 
 ---
 
@@ -77,7 +77,7 @@
 
 ## 5. Estrutura do repositório
 
-Estado atual: `index.html`, `sobre/`, 3 páginas em `projetos/`, `css/`, `js/` e `assets/images/` já existem. `unificando-produtos/`, `seguro-veicular/` e `onboarding-ia/` seguem pendentes de decisão (B2/B6).
+Estado atual: `index.html`, `sobre/`, 3 páginas em `projetos/`, `css/`, `js/`, `assets/images/` e `assets/favicon.svg` já existem. `unificando-produtos/`, `seguro-veicular/` e `onboarding-ia/` seguem pendentes de decisão (B2/B6).
 
 Estrutura da V1 — crie pastas e arquivos adicionais conforme o conteúdo for aprovado, sem criar arquivo vazio "para preencher depois":
 
@@ -105,6 +105,7 @@ matheus-oliveira/
 │   ├── main.js               # ponto de entrada; só inicialização
 │   └── modules/              # um módulo por responsabilidade
 ├── assets/
+│   ├── favicon.svg           # ícone próprio com as iniciais MO
 │   ├── images/cases/         # capturas extraídas dos PDFs, em WebP
 │   ├── images/portrait/      # retrato extraído da home/Sobre
 │   └── fonts/                # fontes self-hosted
@@ -274,7 +275,8 @@ Uma entrega só termina quando:
 | URLs de CTAs e links | Links internos e "Ver projeto" resolvidos; pendentes LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite (B3) |
 | Fonte tipográfica | A decidir — pilha do sistema usada como provisória; sugestão: Inter self-hosted |
 | Imagens e `alt` | Capturas extraídas e convertidas para WebP; capturas de case são decorativas (`alt=""`) e o retrato usa descrição genérica — revisar com o titular (B8) |
-| Domínio e hospedagem | A definir — não publicar URL inventada em `canonical`/`sitemap` |
+| Domínio e hospedagem | A definir — não publicar URL inventada em `canonical`/`og:image`/`sitemap` |
+| Favicon e Open Graph | Favicon próprio em `assets/favicon.svg`; `og:title`, `og:description`, `og:type` e `og:locale` presentes sem URL inventada |
 | Idiomas adicionais | Fora da V1; site começa em pt-BR |
 | Formulário de contato | A decidir; sem backend hoje, usar link confirmado |
 | Tema escuro | A decidir; só se completo e aprovado |

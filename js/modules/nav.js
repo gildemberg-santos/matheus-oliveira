@@ -23,4 +23,9 @@ export function initNavigation() {
     setOpen(toggle, nav, false);
     toggle.focus();
   });
+
+  const desktop = window.matchMedia('(min-width: 48rem)');
+  desktop.addEventListener('change', (event) => {
+    if (event.matches) setOpen(toggle, nav, false);
+  });
 }

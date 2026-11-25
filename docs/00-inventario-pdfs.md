@@ -174,7 +174,7 @@ Resumo dos números publicados nos cases:
 | Case de onboarding | **Pendente:** incluir como página própria ou manter fora |
 | URLs de CTAs e links | Links internos e "Ver projeto" resolvidos; pendentes LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite |
 | Fonte tipográfica | **Pendente:** pilha do sistema como provisória; sugestão Inter self-hosted |
-| Domínio, favicon, Open Graph | **Pendente:** necessário para `canonical`, `sitemap.xml` e metadados |
+| Domínio, `canonical`, `og:image`, `sitemap.xml` | **Pendente:** necessário para URL absoluta; favicon e `og:title`/`og:description`/`og:type`/`og:locale` já presentes |
 | Uso das imagens dos PDFs | Extraídas e convertidas para WebP em `assets/images/`; descrições de `alt` aguardam revisão do titular |
 
 ---

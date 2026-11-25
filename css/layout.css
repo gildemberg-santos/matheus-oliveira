@@ -113,6 +113,13 @@
   color: var(--color-text-inverse);
 }
 
+.cta-band__title {
+  color: var(--color-text-inverse);
+  font-size: var(--font-size-cta);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+}
+
 .cta-band__link {
   display: inline-flex;
   align-items: center;
