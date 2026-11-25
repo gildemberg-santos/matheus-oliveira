@@ -1,0 +1,15 @@
+# O .gitignore global do usuário contém "docs/*". Reverter para que a
+# documentação do projeto seja versionada.
+!docs/
+!docs/**
+
+# Arquivos locais e gerados
+.env
+.env.local
+node_modules/
+dist/
+*.log
+.DS_Store
+
+# Exportações temporárias de PDF (as definitivas viram WebP em assets/)
+*.tmp

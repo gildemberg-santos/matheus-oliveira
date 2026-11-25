@@ -1,0 +1,2 @@
+# PDFs de origem são binários: evitar diff textual e falsos avisos de whitespace.
+*.pdf binary
