@@ -170,12 +170,12 @@ Resumo dos números publicados nos cases:
 |---|---|
 | Nome de exibição | **Definido:** Matheus Oliveira em todo o site |
 | Mapa de páginas | **Definido:** `Desktop-1` = home; `Desktop` = Sobre |
-| Cases sem PDF | **Pendente:** fornecer texto aprovado ou autorizar remoção dos cards |
+| Cases sem PDF | **Pendente:** fornecer texto aprovado; cards 03 e 05 ficaram fora da home |
 | Case de onboarding | **Pendente:** incluir como página própria ou manter fora |
-| URLs de CTAs e links | **Pendente:** LinkedIn, currículo, demonstrações e links "Ver projeto" |
-| Fonte tipográfica | **Pendente:** sugestão Inter self-hosted |
+| URLs de CTAs e links | Links internos e "Ver projeto" resolvidos; pendentes LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite |
+| Fonte tipográfica | **Pendente:** pilha do sistema como provisória; sugestão Inter self-hosted |
 | Domínio, favicon, Open Graph | **Pendente:** necessário para `canonical`, `sitemap.xml` e metadados |
-| Uso das imagens dos PDFs | **Pendente:** extrair e converter para WebP após definir os cases incluídos |
+| Uso das imagens dos PDFs | Extraídas e convertidas para WebP em `assets/images/`; descrições de `alt` aguardam revisão do titular |
 
 ---
 

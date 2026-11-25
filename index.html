@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Matheus Oliveira, Product Designer com mais de 7 anos de experiência em produtos digitais.">
+  <title>Matheus Oliveira — Product Designer</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body id="topo">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Matheus Oliveira — página inicial">
+        <span class="brand__name">Matheus Oliveira</span>
+        <span class="brand__role">Product Designer</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false">
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-site-nav data-open="false" aria-label="Navegação principal">
+        <a href="#portfolio">Projetos</a>
+        <a href="sobre/">Sobre</a>
+        <a href="#contato">Contato <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="section" aria-labelledby="titulo-inicio">
+      <div class="section__inner">
+        <div class="hero">
+          <h1 class="hero__title" id="titulo-inicio">Olá, sou Matheus Oliveira — Product Designer para pessoas, produtos e novas possibilidades.</h1>
+          <p class="hero__intro">Mais de 7 anos construindo soluções simples para situações complexas através de empatia, processos, priorizações, testes e muita empatia.</p>
+          <img class="portrait" src="assets/images/portrait/matheus-apresentacao.webp" width="604" height="720" alt="Imagem de apresentação de Matheus Oliveira" loading="lazy" decoding="async">
+          <a class="hero__link" href="#sobre">Esse sou eu ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="section__inner split">
+        <div>
+          <p class="section-label">01 / Sobre</p>
+          <h2 class="section-heading" id="titulo-sobre">Ideias em movimento.</h2>
+        </div>
+        <div class="body-copy">
+          <p class="lead">A vida me ensinou que tudo é mudança e que as pessoas são a parte mais importante do processo e a rapidez de testar é o diferencial. Acertar e errar faz parte, mas nunca parar.</p>
+          <a class="hero__link" href="sobre/">Mais sobre mim ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="titulo-portfolio">
+      <div class="section__inner">
+        <p class="section-label">02 / Portfólio</p>
+        <h2 class="section-heading" id="titulo-portfolio">Cases de trabalho</h2>
+
+        <!-- Os cards 03 (Unificando produtos) e 05 (Seguro veicular) aguardam texto aprovado — B2. -->
+        <ul class="project-list">
+          <li class="project-card">
+            <p class="project-card__meta">01 / Product Design</p>
+            <h3 class="project-card__title">Sistema de Follow-up para além da janela de 24 horas</h3>
+            <p class="project-card__description">Sequência de mensagens para reengajar leads durante o atendimento.</p>
+            <a class="project-card__link" href="projetos/follow-up-24h/">Ver projeto <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project-card">
+            <p class="project-card__meta">02 / Product Design</p>
+            <h3 class="project-card__title">WhatsApp Suite — A nova era da Leadster</h3>
+            <p class="project-card__description">Agentes de IA que atuam dentro do seu número e plataforma de atendimento humano.</p>
+            <a class="project-card__link" href="projetos/whatsapp-suite/">Ver projeto <span aria-hidden="true">↗</span></a>
+          </li>
+          <li class="project-card">
+            <p class="project-card__meta">04 / UX/UI Design — Estratégia</p>
+            <h3 class="project-card__title">ShopBot — Agentes de IA para lojas virtuais</h3>
+            <p class="project-card__description">Inteligência Artificial respondendo e recomendando produtos.</p>
+            <a class="project-card__link" href="projetos/shopbot/">Ver projeto <span aria-hidden="true">↗</span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Chamada para contato">
+      <div class="cta-band__inner">
+        <a class="cta-band__link" href="#contato">Vamos criar juntos? <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contato">
+    <div class="site-footer__inner">
+      <div class="site-footer__grid">
+        <div>
+          <p class="site-footer__label">Contato</p>
+          <p class="site-footer__title">Vamos criar juntos?</p>
+          <p class="site-footer__title"><span>Conecte-se. pelo LinkedIn</span></p>
+        </div>
+        <div>
+          <p class="site-footer__contact">Fale comigo pelo LinkedIn <span aria-hidden="true">↗</span></p>
+          <p class="site-footer__pending">Endereço do perfil a confirmar pelo titular (B3).</p>
+          <p class="site-footer__info">Santa Bárbara D'Oeste - SP<br>Disponível para novos projetos (híbrido na região de Campinas e remoto para todos os lugares).</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>© 2026 Matheus Oliveira. Todos os direitos reservados.</span>
+        <a href="#topo">Voltar ao topo ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

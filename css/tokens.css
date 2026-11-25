@@ -1,0 +1,95 @@
+/* Fonte única de valores visuais. Nenhum hex, tamanho ou espaçamento fora deste arquivo. */
+
+:root {
+  /* ---------------------------------------------------------------------
+   * Primitivas — Design system · Cores.pdf
+   * ------------------------------------------------------------------- */
+  --neutral-000: #ffffff;
+  --neutral-050: #fcfcfc;
+  --neutral-200: #e6e6e6;
+  --neutral-400: #b8b8b8;
+  --neutral-500: #767676;
+  --neutral-700: #414141;
+  --neutral-950: #000000;
+  --orange-500: #fe3702;
+  --orange-600: #d83c12;
+
+  /* ---------------------------------------------------------------------
+   * Tokens semânticos — Design system · Cores.pdf
+   * ------------------------------------------------------------------- */
+  --color-background-page: var(--neutral-050);
+  --color-background-inverse: var(--neutral-950);
+  --color-surface-default: var(--neutral-000);
+  --color-text-primary: var(--neutral-950);
+  --color-text-secondary: var(--neutral-700);
+  --color-text-muted: var(--neutral-500);
+  --color-text-inverse: var(--neutral-000);
+  --color-text-on-dark-secondary: var(--neutral-400);
+  --color-border-subtle: var(--neutral-200);
+  --color-action-primary: var(--orange-500);
+  --color-action-hover: var(--orange-600);
+  --color-focus: var(--orange-500);
+  --color-focus-inverse: var(--neutral-000);
+
+  /* ---------------------------------------------------------------------
+   * Tipografia
+   * Fonte provisória: pilha do sistema enquanto B4 não é decidido.
+   * ------------------------------------------------------------------- */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  --font-size-hero: clamp(3rem, 6.5vw, 5.875rem);       /* 94 px @1440 */
+  --font-size-section: clamp(2.5rem, 6vw, 5.5rem);      /* 88 px @1440 */
+  --font-size-cta: clamp(2.25rem, 5.4vw, 4.875rem);     /* 78 px @1440 */
+  --font-size-footer: clamp(2rem, 5vw, 4.5rem);         /* 72 px @1440 */
+  --font-size-headline: clamp(2rem, 4.7vw, 4.25rem);    /* 68 px @1440 */
+  --font-size-card: clamp(1.75rem, 3.9vw, 3.5rem);      /* 56 px @1440 */
+  --font-size-lead: clamp(1.25rem, 2vw, 1.875rem);      /* 30 px @1440 */
+  --font-size-body: clamp(1.0625rem, 1.45vw, 1.3125rem); /* 21 px @1440 */
+  --font-size-timeline: 1.25rem;                        /* 20 px */
+  --font-size-logo: 1.25rem;                            /* 20 px */
+  --font-size-nav: 1.0625rem;                           /* 17 px */
+  --font-size-meta: 1rem;                               /* 16 px */
+  --font-size-small: 0.875rem;                          /* 14 px */
+  --font-size-label: 0.8125rem;                         /* 13 px */
+
+  --line-height-tight: 1.05;
+  --line-height-heading: 1.12;
+  --line-height-body: 1.55;
+  --tracking-label: 0.12em;
+
+  /* ---------------------------------------------------------------------
+   * Espaçamento e layout
+   * ------------------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+  --page-gutter: clamp(1.25rem, 3.33vw, 3rem);          /* 48 px @1440 */
+  --section-space: clamp(var(--space-8), 8vw, var(--space-10));
+  --band-space: clamp(var(--space-8), 11vw, 10.75rem);  /* 172 px @1440 */
+
+  --content-max: 84rem;
+  --grid-gap: clamp(var(--space-5), 5vw, var(--space-9));
+  --target-min: 2.75rem;                                /* 44 px de alvo de toque */
+
+  /* ---------------------------------------------------------------------
+   * Forma
+   * ------------------------------------------------------------------- */
+  --radius-sm: 0.25rem;
+  --radius-pill: 999px;
+  --border-width: 1px;
+
+  /* Breakpoints documentados (custom properties não funcionam em @media):
+   * --breakpoint-md: 48rem (768 px)
+   * --breakpoint-lg: 80rem (1280 px)
+   */
+}

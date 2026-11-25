@@ -1,13 +1,13 @@
 # AGENTS.md — Matheus Oliveira
 
-**Versão:** 1.1
+**Versão:** 1.2
 **Atualizado em:** 25/11/2026
 **Stack:** HTML5 + CSS + JavaScript vanilla (ES modules), sem framework
 **Aplica-se a:** todo o repositório
 
 > Este arquivo é a fonte de verdade para agentes de código e para quem trabalhar no projeto. Leia inteiro antes de editar. Em caso de conflito, prevalece nesta ordem: **1)** este arquivo; **2)** `README.md`; **3)** decisões registradas em `docs/`.
 >
-> **Estado atual:** documentação concluída (inventário dos PDFs, plano e backlog em `docs/`). Nenhuma página do site existe ainda. Tudo que aqui aparece como estrutura, comandos ou convenção é o contrato para o código a criar — não descrição de código existente. Não trate seções "planejadas" como implementadas.
+> **Estado atual:** fundação, home, página Sobre e 3 cases implementados em HTML/CSS/JS puro e verificados em 375/768/1280 px. Ainda faltam URLs externas, fonte definitiva, domínio e texto de 2 cases. Seções marcadas como planejadas neste arquivo continuam como contrato, não como código existente.
 
 ---
 
@@ -77,9 +77,9 @@
 
 ## 5. Estrutura do repositório
 
-Estado atual: documentação e material de origem (`AGENTS.md`, `README.md`, `docs/`, `system deginer/`). Nenhuma pasta de site existe ainda.
+Estado atual: `index.html`, `sobre/`, 3 páginas em `projetos/`, `css/`, `js/` e `assets/images/` já existem. `unificando-produtos/`, `seguro-veicular/` e `onboarding-ia/` seguem pendentes de decisão (B2/B6).
 
-Estrutura prevista para a V1 — crie pastas e arquivos conforme o conteúdo for aprovado, sem criar arquivo vazio "para preencher depois":
+Estrutura da V1 — crie pastas e arquivos adicionais conforme o conteúdo for aprovado, sem criar arquivo vazio "para preencher depois":
 
 ```text
 matheus-oliveira/
@@ -271,8 +271,9 @@ Uma entrega só termina quando:
 | Mapa de páginas | **Definido:** `Desktop-1` = home; `Desktop` = Sobre |
 | Texto dos cases "Unificando produtos" e "Seguro veicular" | Pendente — fornecer pelo titular ou retirar os cards da home |
 | Case de onboarding (`Shopbot.pdf`) | A decidir — incluir como página própria ou manter fora |
-| URLs de CTAs e links | Pendente — LinkedIn, currículo, demos e "Ver projeto" |
-| Fonte tipográfica | A decidir — sugestão: Inter self-hosted |
+| URLs de CTAs e links | Links internos e "Ver projeto" resolvidos; pendentes LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite (B3) |
+| Fonte tipográfica | A decidir — pilha do sistema usada como provisória; sugestão: Inter self-hosted |
+| Imagens e `alt` | Capturas extraídas e convertidas para WebP; capturas de case são decorativas (`alt=""`) e o retrato usa descrição genérica — revisar com o titular (B8) |
 | Domínio e hospedagem | A definir — não publicar URL inventada em `canonical`/`sitemap` |
 | Idiomas adicionais | Fora da V1; site começa em pt-BR |
 | Formulário de contato | A decidir; sem backend hoje, usar link confirmado |
@@ -292,4 +293,4 @@ Toda mudança nessas premissas atualiza este arquivo e o `README.md` na mesma en
 - `docs/01-plano-implementacao.md` — mapa de páginas, estrutura e fases.
 - `docs/02-tarefas.md` — backlog com IDs, dependências e status.
 - `docs/fontes/textos-pdfs.md` — texto bruto dos PDFs; nunca publicar como está.
-- `css/tokens.css` — única fonte de tokens visuais (quando criado).
+- `css/tokens.css` — única fonte de tokens visuais.

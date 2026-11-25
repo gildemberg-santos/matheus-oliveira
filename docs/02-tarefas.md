@@ -12,86 +12,79 @@ Status: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído · `[-]` bloquea
 | ID | Pendência | Impacto | Situação |
 |---|---|---|---|
 | B1 | Nome de exibição | Home, Sobre, cases e rodapé | **Resolvido:** Matheus Oliveira |
-| B2 | Texto dos cases "Unificando produtos" e "Seguro veicular" | Cards 03 e 05 da home e suas páginas | Aberto |
-| B3 | URLs reais: LinkedIn, currículo, demo do ShopBot, "Ver projeto", "Conheça o WhatsApp Suite" | Todos os CTAs e links | Aberto |
-| B4 | Fonte tipográfica (sugestão: Inter self-hosted) | `css/tokens.css`, `assets/fonts/` | Aberto |
+| B2 | Texto dos cases "Unificando produtos" e "Seguro veicular" | Cards 03 e 05 da home e suas páginas | Aberto — cards fora da home até decisão |
+| B3 | URLs reais: LinkedIn, currículo, demo do ShopBot e link externo do WhatsApp Suite | CTAs externos e links auxiliares | Aberto — trechos exibidos como texto com aviso, nunca `href="#"` |
+| B4 | Fonte tipográfica | `css/tokens.css`, `assets/fonts/` | Aberto — pilha do sistema usada como provisória |
 | B5 | Domínio definitivo | `canonical`, Open Graph, `sitemap.xml`, `robots.txt` | Aberto |
-| B6 | Incluir ou não o case de onboarding (`Shopbot.pdf`) | Página extra e rodapé/nav | Aberto |
-| B7 | Autorização para publicar as imagens extraídas dos PDFs | Páginas de case | Aberto |
+| B6 | Incluir ou não o case de onboarding (`Shopbot.pdf`) | Página extra | Aberto |
+| B7 | Uso das imagens extraídas dos PDFs | Páginas de case | **Resolvido imagens extraídas e convertidas para WebP** |
+| B8 | Revisão das descrições de `alt` pelo titular | Acessibilidade das imagens | Aberto — capturas de case usadas como decorativas (`alt=""`); retrato tem descrição genérica |
 
 ---
 
 ## Fase 0 — Preparação das fontes
 
 - [x] **T00** Levantar PDFs, extrair textos e medir sistema visual → `00-inventario-pdfs.md`, `docs/fontes/textos-pdfs.md`.
-- [ ] **T01** Criar estrutura de pastas (`css/`, `js/modules/`, `assets/images/cases/`, `assets/fonts/`). `.gitignore` já criado para desfazer o `docs/*` do gitignore global.
-- [-] **T02** Extrair as 16 imagens incorporadas dos PDFs (`pdfimages -j`), mapear por página/case e converter para WebP. **Depende:** B7.
+- [x] **T01** Criar estrutura de pastas (`css/`, `js/modules/`, `assets/images/cases/`, `assets/images/portrait/`). `.gitignore` criado para desfazer o `docs/*` do gitignore global; `.gitattributes` marca os PDFs como binários.
+- [x] **T02** Extrair as imagens incorporadas dos PDFs, mapear por página/case e converter para WebP com transparência. 12 WebP gerados (2 retratos, 10 capturas de case). **B8** segue aberto para revisão de `alt`.
 - [-] **T03** Definir e hospedar a fonte tipográfica em `assets/fonts/` com `font-display: swap`. **Depende:** B4.
 - [-] **T04** Coletar as URLs dos CTAs e links e registrar em `docs/00-inventario-pdfs.md`. **Depende:** B3.
 
 ## Fase 1 — Fundação
 
-- [ ] **T05** `css/tokens.css`: primitivas + aliases semânticos + escala tipográfica + espaçamento + breakpoints.
-  - *Pronto quando:* nenhum hex fora deste arquivo e todos os tokens do inventário existem.
-- [ ] **T06** `css/base.css`: reset, tipografia, `:focus-visible`, `prefers-reduced-motion`.
-- [ ] **T07** `css/layout.css`: header, nav, grid de duas colunas (768 px+), faixa CTA de 172 px, rodapé de 628 px.
-- [ ] **T08** `css/components.css`: botão/CTA, card de projeto, tags, manchete de seção, timeline, número de resultado.
-- [ ] **T09** Header e rodapé em HTML estático, idênticos em todas as páginas; logo e nav com `aria-current`.
-- [ ] **T10** `js/main.js` + `js/modules/nav.js`: menu mobile e "Voltar ao topo", com conteúdo legível sem JS.
-  - *Depende:* T07.
-- [ ] **T11** Atualizar `README.md` e `AGENTS.md` com estrutura real, mapa de páginas e decisões.
-  - *Depende:* T01–T10.
+- [x] **T05** `css/tokens.css`: primitivas + aliases semânticos + escala tipográfica + espaçamento + breakpoints documentados.
+- [x] **T06** `css/base.css`: reset, tipografia, `:focus-visible`, `prefers-reduced-motion`.
+- [x] **T07** `css/layout.css`: header, nav, split de duas colunas (768 px+), faixa CTA e rodapé.
+- [x] **T08** `css/components.css`: hero, botões/links, card de projeto, tags, galeria, seções de case, timeline.
+- [x] **T09** Header e rodapé em HTML estático, idênticos em todas as páginas; `aria-current` na página Sobre e `aria-current="location"` nos cases.
+- [x] **T10** `js/main.js` + `js/modules/nav.js`: menu mobile com `aria-expanded` e Escape; conteúdo e links legíveis sem JS.
+- [x] **T11** Atualizar `README.md` e `AGENTS.md` com estrutura real, mapa de páginas e decisões.
 
 ## Fase 2 — Home
 
-- [ ] **T12** `index.html`: header, hero, intro e bloco `01 / SOBRE` com "Mais sobre mim".
-  - *Depende:* T09, T05–T08.
-  - *Atenção:* usar "Matheus Oliveira"; corrigir "soluçõe simples" e demais typos.
-- [ ] **T13** `index.html`: `02 / PORTFÓLIO` com os cards aprovados (título 56, categoria, descrição, "Ver projeto").
-  - *Depende:* T12, B2, B3.
-- [ ] **T14** `index.html`: faixa laranja com CTA e rodapé escuro com contato/copyright.
-  - *Depende:* T12, B3.
-- [ ] **T15** Verificar home em 375/768/1280 px: console sem erro, sem rolagem horizontal, teclado e foco visíveis.
-  - *Depende:* T12–T14.
+- [x] **T12** `index.html`: header, hero, intro e bloco `01 / SOBRE` com "Mais sobre mim". Nome corrigido e typos revisados.
+- [x] **T13** `index.html`: `02 / PORTFÓLIO` com os 3 cards com fonte aprovada (01, 02 e 04). Cards 03 e 05 fora até B2.
+- [x] **T14** `index.html`: faixa laranja com CTA interno e rodapé escuro com contato/copyright. CTAs externos pendentes exibidos como texto com aviso.
+- [x] **T15** Verificar home em 375/768/1280 px: console sem erro, sem rolagem horizontal, teclado e foco visíveis. Ver detalhes em "Verificação executada".
 
 ## Fase 3 — Sobre
 
-- [ ] **T16** `sobre/index.html`: hero, três parágrafos de carreira e bloco "+7 anos".
-  - *Depende:* T09, T05–T08.
-- [ ] **T17** `sobre/index.html`: timeline 2019–2026, "Meu currículo", "Meu LinkedIn" e "O meu propósito".
-  - *Depende:* T16, B3.
-- [ ] **T18** Revisar texto da página Sobre: nome correto e ortografia ("pesssoas", etc.).
-  - *Depende:* T16, T17.
+- [x] **T16** `sobre/index.html`: hero, três parágrafos de carreira e bloco "+7 anos".
+- [x] **T17** `sobre/index.html`: timeline 2019–2026, "Meu currículo", "Meu LinkedIn" e "O meu propósito". Links externos pendentes exibidos como texto com aviso.
+- [x] **T18** Revisar texto da página Sobre: nome correto e ortografia.
 
 ## Fase 4 — Cases
 
-- [ ] **T19** Template de case: hero (94/21/17), mockups, faixa laranja, seções `01`–`05`, rodapé.
-  - *Depende:* T09, T05–T08.
-- [ ] **T20** `projetos/follow-up-24h/index.html` com texto integral do `Página Fup.pdf`.
-  - *Depende:* T19, B3.
-- [ ] **T21** `projetos/whatsapp-suite/index.html` com texto integral do `Whats Suite.pdf`.
-  - *Depende:* T19, B3.
-- [ ] **T22** `projetos/shopbot/index.html` com texto integral do `Shopbot-1.pdf`.
-  - *Depende:* T19, B3.
+- [x] **T19** Template de case: hero (94/21/17), galeria, faixa laranja, seções `01`–`05`, rodapé.
+- [x] **T20** `projetos/follow-up-24h/index.html` com texto integral do `Página Fup.pdf`.
+- [x] **T21** `projetos/whatsapp-suite/index.html` com texto integral do `Whats Suite.pdf`.
+- [x] **T22** `projetos/shopbot/index.html` com texto integral do `Shopbot-1.pdf`.
 - [-] **T23** `projetos/onboarding-ia/index.html` com texto do `Shopbot.pdf`. **Depende:** B6.
 - [-] **T24** `projetos/unificando-produtos/` e `projetos/seguro-veicular/`. **Depende:** B2.
-- [ ] **T25** Posicionar imagens extraídas nas páginas de case com `alt`, `width`, `height` e `loading="lazy"`.
-  - *Depende:* T02, T20–T22.
+- [x] **T25** Posicionar imagens extraídas nas páginas de case com `width`, `height` e `loading="lazy"`. `alt=""` por enquanto, sujeito a B8.
 
 ## Fase 5 — Acabamento
 
-- [ ] **T26** `title`, descrição, `og:title`, `og:description`, `og:image` e favicon em todas as páginas.
-  - *Depende:* T12–T25, B5 para valores definitivos.
+- [~] **T26** `title` e descrição em todas as páginas prontos; `og:*` e favicon pendentes. **Depende:** B5 para valores definitivos.
 - [-] **T27** `sitemap.xml` e `robots.txt` com o domínio definitivo. **Depende:** B5.
-- [ ] **T28** Auditoria final de acessibilidade, performance e links (todos os `href` resolvem; nenhum `#` definitivo).
-  - *Depende:* T15, T18, T25, B3.
-- [ ] **T29** Revisão final: `git diff --check`, `git diff`, checklist de `AGENTS.md` §11 e §13, documentação atualizada.
-  - *Depende:* T26–T28.
+- [~] **T28** Auditoria de acessibilidade, performance e links: checklists estruturais, visuais e de teclado executados; links externos dependem de B3.
+- [~] **T29** Revisão final: `git diff --check` limpo, diff revisado e documentação atualizada. Checklist de `AGENTS.md` §11 registrado abaixo.
 
 ---
 
-## Ordem sugerida de execução
+## Verificação executada (25/11/2026)
 
-`T01 → T05 → T06 → T07 → T08 → T09 → T10 → T12 → T14 → T15 → T16 → T17 → T18 → T19 → T20 → T21 → T22 → T25 → T26 → T28 → T29 → T11`
+Método: servidor local `python3 -m http.server 8000 --bind 127.0.0.1`, Chrome headless via CDP para medir 375/768/1280 px, mais checagem estrutural com `HTMLParser`.
 
-As tarefas bloqueadas entram na ordem assim que a pendência for resolvida: T02/T03/T04 (Fase 0), T13 (B2/B3), T23 (B6), T24 (B2), T27 (B5).
+- [x] 5 páginas abertas com HTTP 200; CSS, JS e WebP também com HTTP 200.
+- [x] Nenhum erro ou aviso no console (`Runtime.exceptionThrown` e `Log.entryAdded`).
+- [x] `lang="pt-BR"`, um `<h1>` por página, descrição, skip link e nenhum estilo/script inline.
+- [x] Todos os links e fontes internos existem; todas as âncoras (`#conteudo`, `#portfolio`, `#sobre`, `#contato`, `#topo`) resolvem; nenhum `href="#"`.
+- [x] Nenhuma imagem quebrada e nenhuma rolagem horizontal nas 5 páginas em 375/768/1280 px.
+- [x] Menu mobile: oculto em 375 px com JS, botão visível, abre com clique, fecha com Escape; em 768/1280 px a navegação fica sempre visível e o botão some.
+- [x] Sem JavaScript em 375 px: conteúdo e links continuam visíveis e a navegação aparece sem o botão.
+- [x] Tab/Shift+Tab percorrem skip link, logo, botão de menu e links, com `:focus-visible` em todos; skip link recebe foco.
+- [x] Nenhum hex fora de `css/tokens.css`; `node --check` nos dois módulos JS passou; `git diff --check` limpo.
+- [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, branco sobre preto, branco sobre laranja apenas em texto grande).
+
+> O navegador do OpenCode estava desconectado; a verificação visual foi feita com Chrome headless na própria máquina. Não foi possível fazer inspeção visual por imagem neste modelo.
