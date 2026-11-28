@@ -108,3 +108,4 @@ Relatório completo em `docs/03-verificacao-figma.md`. Escopo definido pelo titu
 - [x] **T34** Marcador `—` das listas de case trocado para `text/secondary` (9,95:1).
 - [x] **T35** Falso positivo de `shopbot-02.webp` corrigido no relatório: o arquivo já vinha da imagem 002 do PDF com `smask`. Nenhuma troca de arquivo foi necessária.
 - [ ] **T36** Validação visual final com o titular (posição da imagem na home, `alt` do retrato e gráficos de case) — depende de B8 e da disponibilidade do titular.
+- [x] **T37** Manter a tela de sistema ao lado do retrato na home, conforme o frame: imagem 002 do PDF convertida para WebP em `assets/images/home/tela-automacoes.webp`, par `.hero-media` com colunas `2fr/1fr` em 768 px+ e empilhado em 375 px.

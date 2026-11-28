@@ -276,6 +276,7 @@ Uma entrega só termina quando:
 | URLs de CTAs e links | Links internos, "Ver projeto" e LinkedIn resolvidos (`https://www.linkedin.com/in/matheus-oliveira-b61917142/`); pendentes currículo, demo do ShopBot e link externo do WhatsApp Suite (B3) |
 | Fonte tipográfica | A decidir — pilha do sistema usada como provisória; sugestão: Inter self-hosted |
 | Retrato da home | **Definido em 28/11/2026:** usar a imagem 006 (3024×4032) do frame `Portfólio · Desktop-1`, reamostrada para 768×1024; a imagem anterior (604×720) era um veículo, não a foto de apresentação |
+| Tela do sistema na home | **Definido em 28/11/2026:** manter a tela de automações (imagem 002 do frame) ao lado do retrato, em duas colunas no desktop e empilhada no mobile |
 | Imagens e `alt` | Capturas extraídas e convertidas para WebP; capturas de case são decorativas (`alt=""`) e o retrato usa descrição genérica — revisar com o titular (B8) |
 | Domínio e hospedagem | A definir — não publicar URL inventada em `canonical`/`og:image`/`sitemap` |
 | Favicon e Open Graph | Favicon próprio em `assets/favicon.svg`; `og:title`, `og:description`, `og:type` e `og:locale` presentes sem URL inventada |

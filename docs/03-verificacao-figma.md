@@ -102,7 +102,7 @@ Comparação do topo da home (até 1500 px) entre o PDF `Portfólio · Desktop-1
 | Cargo no header | “Product Designer” acima do nome | “PRODUCT DESIGNER” abaixo do nome, em caixa alta | Corrigido na §7 |
 | “Esse sou eu ↓” | à direita, após o parágrafo (x ≈ 1291 no frame) | à esquerda, abaixo da imagem | Corrigido na §7 |
 | Imagem do topo | foto de pessoa à direita | imagem 604×720 à esquerda (ver §3.2) | Arquivo trocado na §7; posição à direita não foi alterada |
-| Bloco de automações de disparo | presente no topo do frame | não existe no site | Classificação inconclusiva: o texto não aparece na camada de texto do PDF, apenas na imagem renderizada |
+| Tela de automações de disparo | imagem 002 (920×544) à esquerda do retrato | era inexistente no site | Adicionada na §8; o texto da interface está na imagem, não na camada de texto do PDF |
 | `01 / SOBRE` | presente no frame | começa abaixo da área comparada (y ≈ 1346 no site) | Não foi possível confirmar visualmente no recorte; existe no HTML |
 
 Na auditoria original, nenhum ponto tinha sido alterado. Na correção de §7, cargo e link foram ajustados conforme o frame; a posição da imagem e o bloco de automações permanecem como estavam por não haver decisão suficiente.
@@ -125,7 +125,7 @@ Na auditoria original, nenhum ponto tinha sido alterado. Na correção de §7, c
 
 - **Coerente:** todos os tokens de cor do frame `4004-32` e a aplicação semântica no CSS; as 12 imagens do site vêm dos frames exportados.
 - **Corrigido:** cargo no header, posição de “Esse sou eu ↓”, retrato da home, uso de `action/hover` e contraste do marcador de lista (§7).
-- **Ainda pendente:** bloco de automações de disparo, posição da imagem do topo, validação visual final com o titular, `alt` do retrato (B8), fonte definitiva (B4) e domínio (B5).
+- **Ainda pendente:** posição da imagem do topo, validação visual final com o titular, `alt` das imagens (B8), fonte definitiva (B4) e domínio (B5).
 
 ---
 
@@ -143,4 +143,22 @@ Escopo escolhido pelo titular: implementar os achados com fonte no Figma e troca
 | Contraste do marcador | `css/components.css` | `—` das listas de case trocado de `text/muted` (4,43:1) para `text/secondary` (9,95:1) |
 | `shopbot-02.webp` | nenhum | Nenhuma troca: arquivo já era o do Figma (falso positivo corrigido na §3.1) |
 
-Não foram alterados: posição da imagem na home, bloco de automações, nome do hero, fonte, URLs pendentes e `alt` do retrato.
+Não foram alterados nesta rodada: posição da imagem na home, nome do hero, fonte, URLs pendentes e `alt` do retrato. A tela do sistema foi acrescentada na §8, por pedido posterior do titular.
+
+---
+
+## 8. Tela do sistema ao lado do retrato (28/11/2026)
+
+Pedido do titular: manter na home a tela de sistema que aparece ao lado da foto de perfil no Figma.
+
+**Evidência do frame:** `pdftohtml -xml` mostra a imagem 002 do `Portfólio · Desktop-1.pdf` em `x=16, y=784, 920×544 pt`, com o retrato à direita; a comparação por pixels entre essa área renderizada e a imagem extraída deu RMSE `0,024` (centro: `0,015`). Ou seja, é conteúdo visível do frame, não uma camada oculta. A máscara dessa imagem é totalmente opaca.
+
+**Mudança:**
+
+| Arquivo | Mudança |
+|---|---|
+| `assets/images/home/tela-automacoes.webp` | Nova imagem WebP 920×544 gerada da imagem 002 do PDF; RMSE `0,0044` contra a origem |
+| `index.html` | `.hero-media` com a tela à esquerda e o retrato à direita, após o link “Esse sou eu ↓” |
+| `css/components.css` | Grid de duas colunas em 768 px+ (`2fr / 1fr`, compatível com 920:472 do frame) e empilhamento em 375 px; gap de `--space-4` (16 px, igual ao frame) |
+
+O texto da interface está dentro da imagem; não foi transcrito como HTML para não duplicar conteúdo nem inventar rótulos. O `alt` descreve a tela de forma genérica e segue sujeito à revisão B8.

@@ -70,6 +70,16 @@
   color: var(--color-text-secondary);
 }
 
+.hero-media {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+}
+
+.hero-media__screen {
+  width: 100%;
+}
+
 .portrait {
   width: min(100%, 28rem);
 }
@@ -243,6 +253,10 @@
 }
 
 @media (min-width: 48rem) {
+  .hero-media {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+
   .case-gallery--pair {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
