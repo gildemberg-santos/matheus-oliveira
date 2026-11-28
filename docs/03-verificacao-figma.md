@@ -162,3 +162,13 @@ Pedido do titular: manter na home a tela de sistema que aparece ao lado da foto 
 | `css/components.css` | Grid de duas colunas em 768 px+ (`2fr / 1fr`, compatível com 920:472 do frame) e empilhamento em 375 px; gap de `--space-4` (16 px, igual ao frame) |
 
 O texto da interface está dentro da imagem; não foi transcrito como HTML para não duplicar conteúdo nem inventar rótulos. O `alt` descreve a tela de forma genérica e segue sujeito à revisão B8.
+
+---
+
+## 9. Auditoria do site publicado (28/11/2026)
+
+Verificação de `https://matheus-oliveira.onrender.com/index.html` e das 5 páginas: HTML/CSS/JS publicados idênticos ao commit local; 200 em todas as páginas e assets; console e rede sem erros; imagens carregadas; links internos e âncoras válidos; 375/768/1280 px sem rolagem horizontal; Lighthouse 100 em Accessibility, SEO e Best Practices.
+
+**Irregularidade corrigida:** o link da marca tinha `aria-label="Matheus Oliveira — página inicial"`, que não continha o texto visível “Product Designer” — axe `label-content-name-mismatch` (WCAG 2.5.3, impacto *serious*) nas 5 páginas. O `aria-label` passou a ser `"Product Designer Matheus Oliveira — página inicial"`. Após a mudança, o nome acessível contém o texto visível e o Lighthouse não reporta mais a falha.
+
+**Pendências sem mudança:** `og:image` e `canonical` (dependem do domínio definitivo, B5), `alt` do retrato (B8) e validação visual final com o titular (T36).
