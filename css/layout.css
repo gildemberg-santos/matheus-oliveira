@@ -32,12 +32,11 @@
 }
 
 .brand__role {
-  margin-top: var(--space-1);
+  margin-bottom: var(--space-1);
   color: var(--color-text-secondary);
   font-size: var(--font-size-label);
   font-weight: var(--font-weight-regular);
   letter-spacing: var(--tracking-label);
-  text-transform: uppercase;
 }
 
 .nav-toggle {
@@ -111,6 +110,11 @@
   padding: var(--band-space) var(--page-gutter);
   background: var(--color-action-primary);
   color: var(--color-text-inverse);
+}
+
+.cta-band:hover,
+.cta-band:focus-within {
+  background-color: var(--color-action-hover);
 }
 
 .cta-band__title {

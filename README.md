@@ -2,7 +2,7 @@
 
 Portfólio pessoal de Matheus Oliveira: site estático em HTML, CSS e JavaScript vanilla, sem framework e sem build obrigatório.
 
-**Status em 25/11/2026:** fundação, home, página Sobre e 3 cases implementados e verificados em 375/768/1280 px, com favicon e Open Graph básico. Faltam URLs externas, fonte definitiva, domínio e o texto de 2 cases.
+**Status em 28/11/2026:** fundação, home, página Sobre e 3 cases implementados e verificados em 375/768/1280 px, com favicon e Open Graph básico. Correções de coerência com o Figma aplicadas em 28/11/2026 (ver `docs/03-verificacao-figma.md`). Faltam URLs externas, fonte definitiva, domínio e o texto de 2 cases.
 
 ## Executar localmente
 
@@ -56,6 +56,6 @@ system deginer/            PDFs de origem, somente leitura
 - **B6:** decidir se o case extra de onboarding (`Shopbot.pdf`) entra no site.
 - **B8:** revisar as descrições de `alt` das imagens com o titular; as capturas de case estão marcadas como decorativas (`alt=""`) e o retrato usa descrição genérica.
 
-IDs e dependências completos em `docs/02-tarefas.md`. Os achados da auditoria com o Figma — incluindo a imagem de retrato da home e o asset `shopbot-02.webp` — estão em `docs/03-verificacao-figma.md`.
+IDs e dependências completos em `docs/02-tarefas.md`. A auditoria com o Figma, o falso positivo corrigido em `shopbot-02.webp` e as correções aplicadas em 28/11/2026 estão em `docs/03-verificacao-figma.md`.
 
 > Os PDFs em `system deginer/` são material de origem somente leitura. O nome publicado é **Matheus Oliveira**; os trechos "Matheus Almeida" dos PDFs foram corrigidos na transcrição.

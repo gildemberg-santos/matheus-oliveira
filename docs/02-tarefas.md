@@ -1,6 +1,6 @@
 # 02 — Backlog de tarefas
 
-**Atualizado em:** 25/11/2026
+**Atualizado em:** 28/11/2026
 **Como usar:** cada tarefa tem ID, fase, dependência, critério de pronto e status. Execute na ordem das fases; marque `[x]` apenas após a verificação. Pendências externas estão em `BLOQUEIOS` e não devem ser contornadas com conteúdo inventado.
 
 Status: `[ ]` a fazer · `[~]` em andamento · `[x]` concluído · `[-]` bloqueado.
@@ -94,3 +94,17 @@ Método: servidor local `python3 -m http.server 8000 --bind 127.0.0.1`, Chrome h
 - [ ] Contraste medido por ferramenta automática e validação visual com o titular — não executado; cálculo manual prévio encontrou conformidade nos pares usados (texto `#414141` sobre `#FCFCFC`, preto sobre laranja, branco sobre preto, branco sobre laranja apenas em texto grande). O `#767676` do hero sobre `#FCFCFC` resulta em 4,43:1, acima do mínimo de 3:1 para texto grande.
 
 > O navegador do OpenCode estava desconectado; a verificação visual foi feita com Chrome headless na própria máquina. Não foi possível fazer inspeção visual por imagem neste modelo.
+
+---
+
+## Correções pós-auditoria do Figma (28/11/2026)
+
+Relatório completo em `docs/03-verificacao-figma.md`. Escopo definido pelo titular: achados com fonte no frame + troca do retrato da home.
+
+- [x] **T30** Cargo `Product Designer` acima do nome nas 5 páginas; caixa alta removida e espaçamento ajustado no header.
+- [x] **T31** Link “Esse sou eu ↓” reposicionado à direita, após o parágrafo do hero.
+- [x] **T32** Retrato da home trocado pela imagem 006 (3024×4032) do frame `Portfólio · Desktop-1`, reamostrada para 768×1024; `width`/`height` atualizados.
+- [x] **T33** `--color-action-hover` aplicado ao hover/foco da faixa de CTA (branco sobre `#D83C12` = 4,59:1).
+- [x] **T34** Marcador `—` das listas de case trocado para `text/secondary` (9,95:1).
+- [x] **T35** Falso positivo de `shopbot-02.webp` corrigido no relatório: o arquivo já vinha da imagem 002 do PDF com `smask`. Nenhuma troca de arquivo foi necessária.
+- [ ] **T36** Validação visual final com o titular (posição da imagem na home, `alt` do retrato e gráficos de case) — depende de B8 e da disponibilidade do titular.

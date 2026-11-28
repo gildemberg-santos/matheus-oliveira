@@ -49,6 +49,10 @@
   text-decoration: underline;
 }
 
+.hero > .hero__link {
+  justify-self: end;
+}
+
 .section-heading {
   font-size: var(--font-size-section);
   max-width: 20ch;
@@ -185,7 +189,7 @@
 .case-section__body li::before {
   position: absolute;
   left: 0;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
   content: "—";
 }
 
