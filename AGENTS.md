@@ -295,5 +295,6 @@ Toda mudança nessas premissas atualiza este arquivo e o `README.md` na mesma en
 - `docs/00-inventario-pdfs.md` — PDFs, grid, tipografia, tokens e divergências.
 - `docs/01-plano-implementacao.md` — mapa de páginas, estrutura e fases.
 - `docs/02-tarefas.md` — backlog com IDs, dependências e status.
+- `docs/03-verificacao-figma.md` — auditoria de coerência com o Figma (tokens, imagens e páginas).
 - `docs/fontes/textos-pdfs.md` — texto bruto dos PDFs; nunca publicar como está.
 - `css/tokens.css` — única fonte de tokens visuais.

@@ -30,6 +30,7 @@ Acesse `http://localhost:8000/`. Não há dependências de instalação na V1.
 | `docs/00-inventario-pdfs.md` | Inventário dos 7 PDFs, tokens de cor, tipografia, grid e divergências |
 | `docs/01-plano-implementacao.md` | Mapa de páginas, estrutura de arquivos, fases e critérios de pronto |
 | `docs/02-tarefas.md` | Backlog com IDs, dependências, bloqueios, status e verificação executada |
+| `docs/03-verificacao-figma.md` | Auditoria de coerência com o Figma: tokens, imagens e páginas |
 | `docs/fontes/textos-pdfs.md` | Texto bruto extraído dos PDFs (referência, não publicar como está) |
 
 ## Estrutura
@@ -42,7 +43,7 @@ css/                       tokens.css, base.css, layout.css, components.css
 js/                        main.js e módulo de navegação
 assets/images/             WebP extraídas dos PDFs de referência
 assets/favicon.svg         favicon próprio com as iniciais MO
-docs/                      inventário, plano, tarefas e fontes
+docs/                      inventário, plano, tarefas, verificação do Figma e fontes
 system deginer/            PDFs de origem, somente leitura
 ```
 
@@ -55,6 +56,6 @@ system deginer/            PDFs de origem, somente leitura
 - **B6:** decidir se o case extra de onboarding (`Shopbot.pdf`) entra no site.
 - **B8:** revisar as descrições de `alt` das imagens com o titular; as capturas de case estão marcadas como decorativas (`alt=""`) e o retrato usa descrição genérica.
 
-IDs e dependências completos em `docs/02-tarefas.md`.
+IDs e dependências completos em `docs/02-tarefas.md`. Os achados da auditoria com o Figma — incluindo a imagem de retrato da home e o asset `shopbot-02.webp` — estão em `docs/03-verificacao-figma.md`.
 
 > Os PDFs em `system deginer/` são material de origem somente leitura. O nome publicado é **Matheus Oliveira**; os trechos "Matheus Almeida" dos PDFs foram corrigidos na transcrição.
